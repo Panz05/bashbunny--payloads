@@ -10,19 +10,19 @@
 # ASCii Art Prank For Windows
 
 
-# Magenta solid
+# Setup Mode
 LED SETUP
 
-# Set Attack Mode
+# Attack Mode
 ATTACKMODE HID STORAGE
 
-# Get Switch Position
+# Obtain Switch Position
 GET SWITCH_POSITION
 
 # Start Attack
 LED ATTACK
 
-# Run Powershell To Call File
+# Run Powershell String To Call Art.txt File
 QUACK GUI r
 QUACK DELAY 100
 QUACK STRING powershell -NoP -NonI -W Hidden ".((gwmi win32_volume -f 'label=''BashBunny''').Name+'payloads\\$SWITCH_POSITION\\art.txt') -e cmd.exe"
