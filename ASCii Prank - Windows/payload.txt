@@ -5,7 +5,7 @@
 # Props:         Hak5Darren, RalphyZ, Dbum
 # Version:       1.0
 # Category:      Prank
-# Target:        Windows 10
+# Target:        Windows 10, Windows 7
 #
 # ASCii Art Prank For Windows
 
@@ -24,7 +24,7 @@ LED ATTACK
 
 # Run Powershell String To Call Art.txt File
 QUACK GUI r
-QUACK DELAY 100
+QUACK DELAY 10
 QUACK STRING powershell -NoP -NonI -W Hidden ".((gwmi win32_volume -f 'label=''BashBunny''').Name+'payloads\\$SWITCH_POSITION\\art.txt') -e cmd.exe"
 QUACK ENTER
 
